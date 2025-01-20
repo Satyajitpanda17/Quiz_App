@@ -42,9 +42,3 @@ To run this project locally, follow these steps:
 https://github.com/user-attachments/assets/1efd78be-b911-402b-8a0b-f200a70efa2a
 
 4. **API Integration**: Make sure to provide details about the API you are using, including any necessary authentication or configuration steps.
-
-5. **Contributing**: You can expand the contributing section with specific guidelines if you want to encourage contributions.
-
-6. **License**: If you have a specific license for your project, make sure to include it in the `LICENSE` file and reference it correctly.
-
-Once you have customized the README file, you can host it on platforms like GitHub, GitLab, or Bitbucket, and share the link to the repository.
