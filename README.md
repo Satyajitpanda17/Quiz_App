@@ -31,14 +31,14 @@ To run this project locally, follow these steps:
 
 ### Notes:
 
-1. **Screenshots**: Replace the paths in the `![Home Screen](screenshots/home_screen.png)` with the actual paths to your screenshots. Make sure to include the screenshots in a folder named `screenshots` in your project directory.
+1. **Screenshots**:
+   
+![SS1](https://github.com/user-attachments/assets/f7ebf638-d931-4885-ba1a-c321dd1e04f8)       ![SS2](https://github.com/user-attachments/assets/22cc2c5e-69e9-48ec-8d28-4a1f0ce1a030)
+![SS3](https://github.com/user-attachments/assets/51e9e5b7-99c5-4c30-a9db-a74dcf23f8d5)       ![SS4](https://github.com/user-attachments/assets/9f91fd82-1060-4b3c-92e1-aede0d54e9bd)
+![SS5](https://github.com/user-attachments/assets/df7c5248-05aa-4b84-ae45-0f85dbbdcde5)       ![SS6](https://github.com/user-attachments/assets/28d27027-fe23-43c7-88c6-94bc439d5d8d)
+![SS7](https://github.com/user-attachments/assets/c8ce0d51-9635-4184-9daa-20f0deb85550)
 
-2. **Video Link**: Replace `YOUR_VIDEO_ID` with the actual ID of your YouTube video. You can find this in the URL of your video (e.g., `https://www.youtube.com/watch?v=YOUR_VIDEO_ID`).
+3. **Video Link**: 
+https://github.com/user-attachments/assets/1efd78be-b911-402b-8a0b-f200a70efa2a
 
-3. **API Integration**: Make sure to provide details about the API you are using, including any necessary authentication or configuration steps.
-
-4. **Contributing**: You can expand the contributing section with specific guidelines if you want to encourage contributions.
-
-5. **License**: If you have a specific license for your project, make sure to include it in the `LICENSE` file and reference it correctly.
-
-Once you have customized the README file, you can host it on platforms like GitHub, GitLab, or Bitbucket, and share the link to the repository.
+4. **API Integration**: Make sure to provide details about the API you are using, including any necessary authentication or configuration steps.
