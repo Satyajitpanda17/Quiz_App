@@ -43,6 +43,7 @@ class ResultScreen extends StatelessWidget {
                 itemCount: selectedAnswers.length,
                 itemBuilder: (context, index) {
                   return Card(
+                    color: (selectedAnswers[index]==correctAnswers[index]) ? Colors.green : Colors.red,
                     margin: EdgeInsets.symmetric(vertical: 8.0),
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
@@ -51,8 +52,10 @@ class ResultScreen extends StatelessWidget {
                         children: [
                           Text('Question ${index + 1}', style: TextStyle(fontSize: 18)),
                           Text('${questionList[index]}', style: TextStyle(color: Colors.black),),
-                          Text('Your Answer: ${selectedAnswers[index]}', style: TextStyle(color: Colors.red)),
-                          Text('Correct Answer: ${correctAnswers[index]}', style: TextStyle(color: Colors.green)),
+                          SizedBox(height: 10,),
+                          Text('Your Answer: ${selectedAnswers[index]}', style: TextStyle(color: Colors.black)),
+                          SizedBox(height: 10,),
+                          Text('Correct Answer: ${correctAnswers[index]}', style: TextStyle(color: Colors.black)),
                           Row(
                             children: [
                               ElevatedButton(
@@ -91,6 +94,7 @@ class ResultScreen extends StatelessWidget {
                                     return AlertDialog(
                                       title: Text('Materials'),
                                       content: Text('${readingMaterials[index]}' ?? 'No solution available.'),
+                                      actionsOverflowDirection: VerticalDirection.down,
                                       actions: [
                                         TextButton(
                                           onPressed: () {

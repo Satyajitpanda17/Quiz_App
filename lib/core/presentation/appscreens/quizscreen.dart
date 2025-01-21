@@ -61,18 +61,14 @@ class QuizScreen extends StatelessWidget {
                         }
                         return RadioListTile(
                           title: Text(option.description),
-                          value: option.isCorrect,
+                          value: option.description,
                           groupValue: selectedAnswers[index],
                           activeColor: Colors.black,
+                          //fillColor: WidgetStateProperty.all(Colors.purple),
                           onChanged: (value) {
                             selectedAnswers[index] = option.description;
-                            // Update the score
-                            if (value == true) {
-                              score += 4; // Correct answer
-                            } else {
-                              score -= 1; // Wrong answer
-                            }
                           },
+                          selectedTileColor: Colors.purple,
                         );
                       }).toList(),
                     ],
@@ -86,10 +82,15 @@ class QuizScreen extends StatelessWidget {
       ),
        floatingActionButton: FloatingActionButton(
         onPressed: () {
-          print(readingMaterials.length);
-          for(var i in readingMaterials){
-            print(i);
-          }
+          for (int index = 0; index < selectedAnswers.length; index++) {
+            if (selectedAnswers[index] != null && correctAnswers[index] != null) {
+              if (selectedAnswers[index] == correctAnswers[index]) {
+                score += 4; // Correct answer
+              } else {
+               score -= 1; // Wrong answer
+    }
+  }
+}
           // Navigate to the result screen and pass the score
           Get.to(() => ResultScreen(score: score,
           questionList: questionList.map((q) => q.toString()).toList(),
